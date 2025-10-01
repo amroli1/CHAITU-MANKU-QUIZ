@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAITU & MANKU Quiz</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<div id="main-content">
+    <div id="top-row">
+        <span>⏳ Time Left: <span id="timer">00:00</span></span>
+        <button id="pauseBtn">⏸ Pause</button>
+        <span>📝 Attempted: <span id="attempted">0</span></span>
+        <span>📊 Percentage: <span id="percentage">0%</span></span>
+    </div>
+
+    <div id="start-screen">
+        <h2>🗻 CHAITU AND MANKU Quiz</h2>
+        <p>👇 Choose your preferred language to start</p>
+        <button id="start-en">🚀 Start in English</button>
+        <button id="start-hi">🚀 हिंदी में शुरू करें</button>
+    </div>
+
+    <div id="quiz"></div>
+
+    <div id="bottom-row">
+        <button id="prev">⬅ Previous</button>
+        <button id="next">Next ➡</button>
+        <button id="submit">Submit</button>
+        <button id="restart">Restart</button>
+        <div id="progress-container"><div id="progress-bar"></div></div>
+    </div>
+
+    <div id="result-popup">
+        <div id="result-box">
+            <h2 id="result-score"></h2>
+            <div id="result-msg"></div>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+</div>
+
+<div id="question-panel">
+    <h3>Questions</h3>
+    <div id="qnum-container"></div>
+    <div class="legend">
+        <span class="not"></span> Not Attempted<br>
+        <span class="attempted"></span> Attempted<br>
+        <span class="current"></span> Current
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+Initial commit: Add index.html
